@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Siddhida Associates | HOME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css" />
+    <link rel="stylesheet" href="./css/utils.css">
+
+</head>
+<body>
+    <div id="preloader">
+        <img src="./images/scroller.png" alt="Loading" class="spinner" />
+        <div class="loading-text">Loading...</div>
+      </div>
+    <nav>
+        <input type="checkbox"  id="side_activation">
+        <label for="side_activation" class="open-sidebar-button">
+            <a href="./index.html">
+            </a>
+            <img src="./images/open.svg" >
+        </label>
+        <div class="logo">
+            <img src="./images/logo.jpg" alt="logo">
+        </div>
+        <div class="links_container">
+        <label for="side_activation">
+            <img src="./images/close.svg" class="close-sidebar-button" >
+        </label>
+        <div class="left g">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./listing.html">Services</a>
+        </div>
+        <div class="right g">
+            <a href="https://www.google.com/search?q=siddhida+associates&oq=si&gs_lcrp=EgZjaHJvbWUqDwgAECMYJxjjAhiABBiKBTIPCAAQIxgnGOMCGIAEGIoFMhUIARAuGCcYrwEYxwEYgAQYigUYjgUyDAgCEAAYQxiABBiKBTIGCAMQRRhAMgYIBBBFGDkyBggFEEUYPDIGCAYQRRg9MgYIBxBFGD3SAQgxMTk1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#mpd=~16379923519716299033/customers/reviews" class="con">Reviews</a>
+            <a href="./contact.html" class="btn">Contact</a>
+            <span href="" onclick="toggleMode()"><i class="fa-regular fa-moon"></i></span>
+        </div>
+    </div>
+       
+    </nav>
+    <div class="banner">
+        <div class="circle"></div>
+        <div class="slider">
+            <!-- list Items -->
+            <div class="list">
+                <div class="item active">
+                    <img src="./images/pexels-fotoaibe-813692.jpg">
+                    <div class="content">
+                        <p>1</p>
+                        <h2>Find Your Perfect Home with Confidence</h2>
+                        <div class="column">
+                            <p>
+                                Explore a wide range of verified properties with expert support every step of the way. Whether buying or renting, we ensure a smooth, stress-free experience.
+                            </p>
+                            <a href="./contact.html" class="btn">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/pexels-fotoaibe-1571460.jpg">
+                    <div class="content">
+                        <p>2</p>
+                        <h2>Turning Dreams into Addresses</h2>
+                        <div class="column">
+                            <p>
+                                From cozy apartments to spacious villas, we help you turn your real estate dreams into reality. Let us guide you to a place you'll love to call home.
+                            </p>
+                            <a href="./contact.html" class="btn">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/pexels-chaitaastic-1918291.jpg">
+                    <div class="content">
+                        <p>3</p>
+                        <h2>Your Trusted Partner in Property</h2>
+                        <div class="column">
+                            <p>
+                               With years of experience and a reputation for integrity, we provide honest advice and personalized service for all your real estate needs.
+                            </p>
+                            <a href="./contact.html" class="btn">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/pexels-medhat-ayad-122846-439227.jpg">
+                    <div class="content">
+                        <p>4</p>
+                        <h2>Expert Guidance. Exceptional Results.</h2>
+                        <div class="column">
+                            <p>
+                               Rely on our in-depth market knowledge and strategic approach to find, sell, or lease property at the right value, at the right time.
+                            </p>
+                            <a href="./contact.html" class="btn">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/pexels-pixabay-271624.jpg">
+                    <div class="content">
+                        <p>5</p>
+                        <h2>Discover Homes. Discover Happiness.</h2>
+                        <div class="column">
+                            <p>
+                               More than just houses — we help you find the space where life’s best moments unfold. Begin your journey to a better lifestyle today.
+                            </p>
+                            <a href="./contact.html" class="btn">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- button arrows -->
+            <div class="arrows">
+                <button id="prev">
+                    <<
+                     </button>
+                        <button id="next"> >> </button>
+            </div>
+            <!-- thumbnail -->
+            <div class="thumbnail">
+                <div class="item active">
+                    <img src="./images/pexels-fotoaibe-813692.jpg">
+                    <div class="content">
+                        #1
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/pexels-fotoaibe-1571460.jpg">
+                    <div class="content">
+                        #2
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/pexels-chaitaastic-1918291.jpg">
+                    <div class="content">
+                        #3
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/pexels-medhat-ayad-122846-439227.jpg">
+                    <div class="content">
+                        #4
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/pexels-pixabay-271624.jpg">
+                    <div class="content">
+                       #5
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="overflower g">
+        <p>Contact</p>
+        <p>9211438839</p>
+    </div>
+    <button onclick="topFunction()" id="myBtn" class="shrink" title="Go to top">Top</button>
+    <svg 
+    style="top: -150vh;"
+    width="000"
+    height="000"
+    viewBox="0 0 1000 2000"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class="squiggle"
+  >
+    <path
+      d="M-24.5 101C285 315 5.86278 448.291 144.223 631.238C239.404 757.091 559.515 782.846 608.808 617.456C658.101 452.067 497.627 367.073 406.298 426.797C314.968 486.521 263.347 612.858 322.909 865.537C384.086 1125.06 79.3992 1007.94 100 1261.99C144.222 1807.35 819 1325 513 1142.5C152.717 927.625 -45 1916.5 1191.5 1852"
+      stroke=" #fff"
+      stroke-width="1"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+  </svg>
+  <div class="stats-container">
+    <div class="stat">
+      <div class="subscribers-odometer odometer plus">0</div>
+      <div class="type">Customers</div>
+    </div>
+    <div class="stat">
+      <div class="videos-odometer odometer plus">0</div>
+      <div class="type">Properties sold</div>
+    </div>
+    <div class="stat">
+      <div class="projects-odometer odometer">0</div>
+      <div class="type">Consultancy</div>
+    </div>
+  </div>
+    <div class="about">
+        <div class="left">
+            <span class="abb">About us</span>
+            <span class="heading">Your Vision, Our <span class="blue">Blueprint</span>
+            </span>
+            <p>Siddhida Associates is a trusted name in the real estate industry, known for delivering quality,
+                transparency, and customer-centric solutions. With a deep understanding of the local market and a
+                passion for helping clients find their perfect property, we specialize in residential and commercial
+                real estate services across Indirapuram, Raj Nagar Extension, Vaishali, Delhi, Noida etc... . At
+                Siddhida Associates, we don’t just build spaces—we create lifestyles, tailored to meet the unique needs
+                of every buyer, seller, and investor. Our commitment to integrity, innovation, and long-term
+                relationships has made us a preferred partner in every step of the property journey.
+            </p>
+            <div class="placeholders g">
+                <div class="placeholder_elements g">
+                    <div class="left">
+                        <img src="./images/medal.png" alt="logo">
+                    </div>
+                    <div class="right">
+                        <p>With a strong presence in Indirapuram, Raj Nagar Extension, Vaishali, Delhi, and Noida, we combine in-depth market knowledge with personalized service to help clients make informed property decisions that align with their goals.</p>
+                    </div>
+                </div>
+                <div class="placeholder_elements g">
+                    <div class="left">
+                        <img src="./images/medal.png" alt="logo">
+                    </div>
+                    <div class="right">
+                        <p>From property search and documentation to financing guidance and post-sale support, we offer comprehensive services under one roof — ensuring a seamless and hassle-free experience for buyers, sellers, and investors alike.</p>
+                    </div>
+                </div>
+                <a href="./about.html" class="btn shrink" >Learn More</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="list">
+                <img src="./images/pexels-asphotograpy-101808.jpg" class="hide">
+                <img src="./images/pexels-homelane-com-492179-1776574.jpg" class="hide">
+                <img src="./images/pexels-pixabay-271624.jpg" alt="">
+                <img src="./images/pexels-fotoaibe-813692.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="service_parent">
+        <div class="services">
+            <div class="left">
+                <span class="abb">Our Services</span>
+                <span class="heading">Real Estate Services <span class="blue">Built Around You</span></span>
+            </div>
+            <div class="right g" style="flex-direction: column;">
+                <p>At Siddhida Associates, we offer end-to-end real estate solutions designed to meet the diverse needs
+                    of homebuyers, investors, and property owners. With a deep understanding of the market and a
+                    commitment to excellence, we provide personalized guidance at every step of your property journey.
+                </p>
+        <a href="./listing.html" class="btn">Learn More</a>
+
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">
+                <div class="left">
+                    <img src="./images/flex1.jpg" alt="log1010">
+                </div>
+                <div class="right">
+                    <span class="heading">Farm Houses</span>
+                    <p>Escape the hustle of city life with our curated selection of farmhouses—perfect for weekend
+                        retreats, holiday homes, or peaceful countryside living.</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="left">
+                    <img src="./images/pexels-asphotograpy-565324.jpg" alt="log1010">
+                </div>
+                <div class="right">
+                    <span class="heading">Residential Properties</span>
+                    <p>Explore flats, villas, and duplex homes in prime Indirapuram locations.</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="left">
+                    <img src="./images/pexels-tomfisk-1483880.jpg" alt="log1010">
+                </div>
+                <div class="right">
+                    <span class="heading">Agricultural Land</span>
+                    <p>"Productive agricultural land perfect for farming and investment, with clear titles, road access, and water availability."</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="reviews">
+        <div class="flex review_child">
+            <div class="left">
+                <span class="abb">Our Testimonials</span>
+                <span class="heading">Customer <span class="blue">insights</span></span>
+            </div>
+            <div class="right">
+                <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LLPMLqgoqYg3YLRSNagwtjRITjU1M04yTbNMTTFPsjKosLCwtDC3NDUyTDOyMDAwMPMSLs5MScnITElUSCwuzk_OTCxJLQYANvAWpQ&q=siddhida+associates&oq=sidd&gs_lcrp=EgZjaHJvbWUqFQgBEC4YJxivARjHARiABBiKBRiOBTIPCAAQIxgnGOMCGIAEGIoFMhUIARAuGCcYrwEYxwEYgAQYigUYjgUyBggCEEUYOTIGCAMQRRg7MgYIBBBFGDsyBggFEEUYPDIGCAYQRRg9MgYIBxBFGD3SAQgyNjk4ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#mpd=~16379923519716299033/customers/reviews" class="btn shrink">Share Your Experience</a>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="lists">
+                <div class="items >
+            <div class=" list_items">
+                    <div class="left">
+                        <img src="./images/user.jpg" alt="logo">
+                        <img class="star" src="./images/star.webp" alt="star">
+                    </div>
+                    <div class="right">
+                        <span class="name">"Prakash Rawat"</span>
+                        <p class="text">I sold my property through them in June 2024 and had a really satisfying
+                            experience. Prasann Kumar is a thorough professional, helpful and understanding so would
+                            recommend his services.</p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="list_items">
+                        <div class="left">
+                            <img src="./images/user.jpg" alt="logo">
+                            <img class="star" src="./images/star.webp" alt="star">
+                        </div>
+                        <div class="right">
+                            <span class="name">"Reetesh Pande"</span>
+                            <p class="text">It great Experience , Mr Prasan is very humble and professional.
+Handle and support from starting till end..
+It been great experience for me..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="list_items">
+                        <div class="left">
+                            <img src="./images/user.jpg" alt="logo">
+                            <img class="star" src="./images/star.webp" alt="star">
+                        </div>
+                        <div class="right">
+                            <span class="name">"Shweta Mishra"</span>
+                            <p class="text">Best property dealer in indrapuram n nearby areas . Very gentle and best deal given by dealer ☺</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="list_items">
+                        <div class="left">
+                            <img src="./images/user.jpg" alt="logo">
+                            <img class="star" src="./images/star.webp" alt="star">
+                        </div>
+                        <div class="right">
+                            <span class="name">"Mithilesh Jha"</span>
+                            <p class="text">Had a great experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="list_items">
+                        <div class="left">
+                            <img src="./images/user.jpg" alt="logo">
+                            <img class="star" src="./images/star.webp" alt="star">
+                        </div>
+                        <div class="right">
+                            <span class="name">"Rohini Mishra"</span>
+                            <p class="text">Best property dealer in indrapuram. Great experience 👍👍</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact  g">
+        <div class="overlap g">
+            <span class="heading">
+                Get in Touch with
+                Siddhida Associates
+            </span>
+            <a href="./contact.html" class="btn shrink">Contact</a>
+            <div id="box"><img src="./images/scroller.png" alt=""></div>
+        </div>
+    </div>
+    <div class="footer">
+      <div class="flex logo">
+        <img src="./images/logo.jpg" alt="logo" >
+      </div>
+      <div class="flex">
+        <span class="heading">Location</span>
+        <span>756/G, Nyay Khand I, Indirapuram, Ghaziabad, Uttar Pradesh 201014</span>
+    </div>
+    <div class="flex">
+          <span class="heading">contacts</span>
+        <div class="flex_item overflow">
+            <div class="left">
+                <img src="./images/whatsapp.png" alt="logo">
+            </div>
+            <div class="right">+91 9211438839</div>
+        </div>
+        <div class="flex_item overflow">
+            <div class="left">
+                <img src="./images/phone-512.webp" alt="logo">
+            </div>
+            <div class="right">+91 9211438839 <br> +91 9211438839</div>
+        </div>
+      </div>
+    </div>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const createOdometer = (el, value) => {
+    const odometer = new Odometer({
+      el: el,
+      value: 0,
+    });
+
+    let hasRun = false;
+
+    const options = {
+      threshold: [0, 0.9],
+    };
+
+    const callback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !hasRun) {
+          odometer.update(value);
+          hasRun = true;
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+    observer.observe(el);
+  };
+
+  createOdometer(document.querySelector(".subscribers-odometer"), 500);
+  createOdometer(document.querySelector(".videos-odometer"), 300);
+  createOdometer(document.querySelector(".projects-odometer"), 99);
+});
+    </script>
+    <script src="./js/line.js"></script>
+    <script src="./js/nav_scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+</body>
+
+</html>
+<!-- service new page 
+img change 
+who we are glass morphism 
+contact col #fff-->
