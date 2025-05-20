@@ -1,0 +1,62 @@
+.banner::after{
+ content: '';
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ background-image: linear-gradient(
+     to top, #00000055 40%, transparent
+ );
+}
+.banner{
+    position: relative;
+    z-index: -2;
+ background: url(../images/pexels-nicolae-casir-56591-205078.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 70vh;
+}
+.abbout .left img{
+ width: 80%;
+}
+.banner .heading{
+    color: #fff;
+}
+.banner .blue{
+    color: #d4ff00;
+}
+.column .placeholder_elements{
+ flex-direction: column;
+}
+.column .placeholder_elements .left{
+ width: 100%;
+}
+.right .placeholder_elements .right{
+ width: 100%;
+}
+.contact_banner{
+    background-image: url(../images/contact_page.jpg);
+}
+iframe{
+    border:4px solid rgb(30, 10, 128);
+    }
+    @media (max-width:660px) {
+.placeholders .placeholder_elements .left{
+    width: 100%;
+}
+.gog{
+    width: 20% !important;
+}
+.gogr{
+    width: 80% !important;
+}
+    }
+    svg.squiggle {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 190vw;
+      }
