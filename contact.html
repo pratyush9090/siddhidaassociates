@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Siddhida Associates | CONTACT</title>
+ <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="./css/main.css">
+ <link rel="stylesheet" href="./css/utils.css">
+ <link rel="stylesheet" href="./css/about.css">
+</head>
+<body>
+ <div id="preloader">
+  <img src="./images/scroller.png" alt="Loading" class="spinner" />
+  <div class="loading-text">Loading...</div>
+</div>
+<nav>
+    <input type="checkbox"  id="side_activation">
+    <label for="side_activation" class="open-sidebar-button">
+        <img src="./images/open.svg" >
+    </label>
+    <div class="logo">
+        <a href="./index.html">
+        <img src="./images/logo.jpg" alt="logo">
+        </a>
+    </div>
+    <div class="links_container">
+    <label for="side_activation">
+        <img src="./images/close.svg" class="close-sidebar-button" >
+    </label>
+    <div class="left g">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./listing.html">Services</a>
+    </div>
+    <div class="right g">
+        <a href="https://www.google.com/search?q=siddhida+associates&oq=si&gs_lcrp=EgZjaHJvbWUqDwgAECMYJxjjAhiABBiKBTIPCAAQIxgnGOMCGIAEGIoFMhUIARAuGCcYrwEYxwEYgAQYigUYjgUyDAgCEAAYQxiABBiKBTIGCAMQRRhAMgYIBBBFGDkyBggFEEUYPDIGCAYQRRg9MgYIBxBFGD3SAQgxMTk1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#mpd=~16379923519716299033/customers/reviews" class="con">Reviews</a>
+        <a href="./contact.html" class="btn">Contact</a>
+        <span href="" onclick="toggleMode()"><i class="fa-regular fa-moon"></i></span>
+    </div>
+  </div>
+   
+  </nav>
+<div  id="main-content">
+<div class="banner contact_banner g">
+ <span class="heading enlarge">
+  Contact <span class="blue"> Us</span>
+ </span>
+ </div>
+ <div class="g flex-clm">
+  <div class="left">
+    <div class="placeholders column g">
+      <div class="placeholder_elements hundred g">
+          <div class="left hundred">
+              <span class=" heading sub_headings"> Phone Number</span>
+          </div>
+          <div class="right hundred">
+           <p>+91 9211438839</p>
+           <p>+91 9211438839</p>
+          </div>
+      </div>
+      <div class="placeholder_elements  hundred g">
+          <div class="left hundred">
+              <span class=" heading sub_headings"> Emil</span>
+          </div>
+          <div class="right hundred">
+              <p>siddhidaassociates@gmail.com</p>
+          </div>
+      </div>
+      <div class="placeholder_elements  hundred g">
+          <div class="left hundred">
+              <span class=" heading sub_headings"> Whatsapp</span>
+          </div>
+          <div class="right hundred">
+              <p>+91 9211438839</p>
+          </div>
+      </div>
+  </div>
+  </div>
+
+  <div class="right">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2073.5821433446545!2d77.35003313430568!3d28.633837127309825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce563b5f9ed7b%3A0x889879521f280006!2sSiddhida%20Associates!5e0!3m2!1sen!2sin!4v1746189621791!5m2!1sen!2sin" width="600" height="450" style="border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+ </div>
+  <div class="footer">
+      <div class="flex logo">
+        <img src="./images/logo.jpg" alt="logo" >
+      </div>
+      <div class="flex">
+        <span class="heading">Location</span>
+        <span>756/G, Nyay Khand I, Indirapuram, Ghaziabad, Uttar Pradesh 201014</span>
+    </div>
+    <div class="flex">
+          <span class="heading">contacts</span>
+        <div class="flex_item overflow">
+            <div class="left">
+                <img src="./images/whatsapp.png" alt="logo">
+            </div>
+            <div class="right">+91 9211438839</div>
+        </div>
+        <div class="flex_item overflow">
+            <div class="left">
+                <img src="./images/phone-512.webp" alt="logo">
+            </div>
+            <div class="right">+91 9211438839 <br> +91 9211438839</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+  function toggleMode() {
+  document.body.classList.toggle('dark-mode');
+}
+
+  document.addEventListener("DOMContentLoaded", function () {
+ const preloader = document.getElementById("preloader");
+ const content = document.getElementById("main-content");
+
+ if (preloader) preloader.style.display = "none";
+ if (content) content.style.display = "block";
+});
+ const circleElement = document.querySelector('.circle');
+
+const mouse = { x: 0, y: 0 }; 
+const previousMouse = { x: 0, y: 0 } 
+const circle = { x: 0, y: 0 }; 
+
+let currentScale = 0; 
+let currentAngle = 0; 
+
+window.addEventListener('mousemove', (e) => {
+mouse.x = e.x;
+mouse.y = e.y;
+});
+
+const speed = 0.17;
+
+const tick = () => {
+circle.x += (mouse.x - circle.x) * speed;
+circle.y += (mouse.y - circle.y) * speed;
+const translateTransform = `translate(${circle.x}px, ${circle.y}px)`;
+
+const deltaMouseX = mouse.x - previousMouse.x;
+const deltaMouseY = mouse.y - previousMouse.y;
+previousMouse.x = mouse.x;
+previousMouse.y = mouse.y;
+const mouseVelocity = Math.min(Math.sqrt(deltaMouseX**2 + deltaMouseY**2) * 4, 150); 
+const scaleValue = (mouseVelocity / 150) * 0.5;
+currentScale += (scaleValue - currentScale) * speed;
+const scaleTransform = `scale(${1 + currentScale}, ${1 - currentScale})`;
+
+const angle = Math.atan2(deltaMouseY, deltaMouseX) * 180 / Math.PI;
+if (mouseVelocity > 20) {
+ currentAngle = angle;
+}
+const rotateTransform = `rotate(${currentAngle}deg)`;
+
+circleElement.style.transform = `${translateTransform} ${rotateTransform} ${scaleTransform}`;
+
+window.requestAnimationFrame(tick);
+}
+
+tick();
+</script>
+<script src="./js/line.js"></script>
+</body>
+</html>
